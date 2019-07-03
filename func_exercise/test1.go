@@ -95,3 +95,7 @@ func main()  {
 //如果defer 语句位于return语句之后，则defer没有注册，不会执行
 
 //主动调用os.Exits(int)退出进程时，defer将不再被执行
+
+// defer 语句位置不当，有可能导致panic， 一般defer语句放在错误检查语句之后
+
+// defer中最好不要对有名返回值参数进行操作，否则会引发匪夷所思对结果
