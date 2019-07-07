@@ -12,7 +12,7 @@ func fa(a int) func (i int) int {
 	}
 } 
 
-func main()  {
+func main2()  {
 	f := fa(1)		//f引用的外部的闭包环境包括本次函数调用的形参a的值1
 	g := fa(1)		//g引用的外部的闭包环境包括本次函数调用的形参a的值1
 	
