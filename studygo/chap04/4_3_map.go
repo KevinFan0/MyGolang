@@ -32,6 +32,11 @@ func equal(x, y map[string]int) bool {
 	return true
 }
 
+// 使用map来记录提交相同的字符串列表的次数。它使用了fmt.Sprintf函数将字符串列表转换为一个字符串以用于map的key，通过%q参数忠实地记录每个字符串元素的信息
+var m = make(map[string]int)
+func k(list []string) string { return fmt.Sprintf("%q", list) }
+func Add(list []string)  { m[k(list)]++ }
+func Count(list []string) int { return m[k(list)] }
 
 func main()  {
 	
