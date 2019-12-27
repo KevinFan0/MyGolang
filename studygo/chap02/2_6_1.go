@@ -7,5 +7,5 @@ import (
 
 
 func main() {
-	fmt.Println(popcount.PopCount())
+	fmt.Println(popcount.PopCount(12))
 }

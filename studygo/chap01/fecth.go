@@ -8,7 +8,7 @@ import (
 )
 
 
-func main_1_5() {
+func main() {
 	for _, url := range os.Args[1:] {
 		t := strings.HasPrefix(url, "http://") 
 		if !t {
